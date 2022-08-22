@@ -40,7 +40,11 @@ A program counts the number of dots on a domino built into a docker image run th
      style="float: left; margin-right: 10px;"
      width="300" />
      
-Get the docker image here
+## How to Run This App via Docker
+This image is available on Docker hub.
 ```
  https://hub.docker.com/repository/docker/afhabibieee/dotcounter
 ```
+- Pull image: `docker pull afhabibieee/dotcounter`
+- Run docker container: `docker run -p 8501:8501 afhabibieee/dotcounter`
+- Go to : `localhost:8501'
