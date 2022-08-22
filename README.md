@@ -45,6 +45,6 @@ This image is available on Docker hub.
 ```
  https://hub.docker.com/repository/docker/afhabibieee/dotcounter
 ```
-- Pull image: `docker pull afhabibieee/dotcounter`
-- Run docker container: `docker run -p 8501:8501 afhabibieee/dotcounter:latest`
+- Pull image: `docker pull afhabibieee/dotcounter:1.0`
+- Run docker container: `docker run -p 8501:8501 afhabibieee/dotcounter:1.0`
 - Go to : `localhost:8501`
