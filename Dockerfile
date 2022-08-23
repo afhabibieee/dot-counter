@@ -1,9 +1,9 @@
 FROM python:3.8.10
 
-CMD mkdir /gui_dotcounter
-COPY . /gui_dotcounter
+CMD mkdir /app
+COPY . /app
 
-WORKDIR /gui_dotcounter
+WORKDIR /app
 
 EXPOSE 8501
 
