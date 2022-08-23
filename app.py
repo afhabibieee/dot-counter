@@ -41,7 +41,7 @@ def count_dots(contours, card):
     else:
         tolerance = 3
         most_freq = max(set(list(xs)), key=list(xs).count)
-        dot_ranges = range(most_freq, most_freq+tolerance)
+        dot_ranges = range(most_freq-tolerance, most_freq+tolerance)
         dot_contours = [contour for contour in contours if contour.shape[0] in dot_ranges]
 
     return len(dot_contours), dot_contours
