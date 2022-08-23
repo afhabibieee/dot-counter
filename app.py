@@ -1,7 +1,6 @@
 import streamlit as st
 import cv2
 import numpy as np
-from PIL import Image
 import matplotlib.pyplot as plt
 
 @st.cache()
@@ -81,7 +80,7 @@ elif app_mode == 'Run the app':
     )
     
     if img_file_buffer is not None:
-        image = np.array(Image.open(img_file_buffer))
+        image = cv2.imdecode(np.frombuffer(img_file_buffer.getvalue(), np.uint8), -1)
         st.sidebar.text('Original Image')
         st.sidebar.image(image)
     
@@ -106,7 +105,7 @@ elif app_mode == 'Run the app':
             lineType=cv2.LINE_AA
         )
         p = plt.figure(figsize=(10, 10))
-        plt.imshow(cv2.cvtColor(out_image, cv2.COLOR_BGR2RGB)[:,:,::-1])
+        plt.imshow(cv2.cvtColor(out_image, cv2.COLOR_BGR2RGB))
         plt.axis('off')
 
         st.pyplot(p)
