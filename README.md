@@ -31,20 +31,20 @@ A program counts the number of dots on a domino built into a docker image run th
      
 ##### outcomes
 
-<img src="https://drive.google.com/uc?export=view&id=1Fr5BR2DnYaOegE3T24YBQIeHdltn3AZT"
+<img src="https://drive.google.com/uc?export=view&id=1pMSe5MTkUHL4-OpNoW2gBf1-4a_kum2D"
      alt="single image"
      style="float: left; margin-right: 100px;"
      width="180" />
-<img src="https://drive.google.com/uc?export=view&id=18XVUbH0WEEnYU3DHxY-HAtZ7riEbtnte"
+<img src="https://drive.google.com/uc?export=view&id=1jcFlU5zZQwqUCG2ELqQW9eMnbbMqFA8W"
      alt="multiple images"
      style="float: left; margin-right: 10px;"
      width="300" />
-     
+
 ## How to Run This App via Docker
 This image is available on Docker hub.
 ```
  https://hub.docker.com/repository/docker/afhabibieee/dotcounter
 ```
-- Pull image: `docker pull afhabibieee/dotcounter:1.0`
-- Run docker container: `docker run -p 8501:8501 afhabibieee/dotcounter:1.0`
+- Pull image: `docker pull afhabibieee/dotcounter:1.5`
+- Run docker container: `docker run -p 8501:8501 afhabibieee/dotcounter:1.5`
 - Go to : `localhost:8501`
